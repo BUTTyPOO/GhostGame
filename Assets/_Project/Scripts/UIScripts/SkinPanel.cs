@@ -16,9 +16,14 @@ public class SkinPanel : MonoBehaviour
 
     void Start()
     {
+#if UNITY_EDITOR
+        Saver.SaveAdsWatchedData(adsData.array);
+#else
+        adsData.array = Saver.LoadAdsWatchedData();
+#endif
+
         skinIcons = new SkinIcon[transform.childCount];
         currentSkin.value = Saver.LoadSkin();
-        adsData.array = Saver.LoadAdsWatchedData();
         LoadDataInChildren();
     }
 

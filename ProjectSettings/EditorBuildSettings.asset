@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/SkinsScene.unity
     guid: 15add1133d56b614f9d6e051c42e6f48
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Project/Scenes/ParkourSegment.unity
     guid: 96fb47ae23f39af40b40957fb4957cdc
   m_configObjects: {}

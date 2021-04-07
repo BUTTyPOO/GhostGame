@@ -129,6 +129,8 @@ public class Enforcer : MonoBehaviour   // Enforces rules. Decides if you failed
 
     void GetObjects()
     {
+        if (SceneManager.GetActiveScene().buildIndex != 1)   //If we are NOT in the playing scene
+            return;
         player = GameObject.Find("Player").GetComponent<PlayerController>();
         curHuman = GameObject.Find("Human").GetComponent<HumanController>();
         spawnPoint1 = GameObject.Find("SpawnPoint1");
