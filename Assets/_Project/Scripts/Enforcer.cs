@@ -52,6 +52,8 @@ public class Enforcer : MonoBehaviour   // Enforces rules. Decides if you failed
 
     [SerializeField] SettingsVars settingsVars;
 
+    int lastHumanSpawnedIndex = 0;
+
     // Singleton Enforcement
     private static Enforcer _instance;
     public static Enforcer Instance
@@ -221,6 +223,7 @@ public class Enforcer : MonoBehaviour   // Enforces rules. Decides if you failed
         Vector3 spawnPoint = spawnPoint1.transform.position;
         GameObject newHuman = Instantiate(humanPrefab, spawnPoint, Quaternion.identity);
         curHuman = newHuman.GetComponent<HumanController>();
+        curHuman.lastHumanIndex = lastHumanSpawnedIndex;
         HumanSpawned?.Invoke(newHuman);
     }
 

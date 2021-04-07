@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &18010996 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4250167406971015265, guid: c0ad72ec902bc3b419a5589c489464bd, type: 3}
+  m_PrefabInstance: {fileID: 4046125980190622718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &76998781 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4046125980113906563, guid: c0ad72ec902bc3b419a5589c489464bd, type: 3}
@@ -134,6 +139,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915d6d90fbac7404d903ba129e9fa9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &110824704 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6771055922843785511, guid: c0ad72ec902bc3b419a5589c489464bd, type: 3}
+  m_PrefabInstance: {fileID: 4046125980190622718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &425683642 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4046125980578916676, guid: c0ad72ec902bc3b419a5589c489464bd, type: 3}
@@ -241,6 +251,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdeca04f26b684940bc4d9eaa97d8d00, type: 3}
+--- !u!1 &1005821483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8266993429684873530, guid: c0ad72ec902bc3b419a5589c489464bd, type: 3}
+  m_PrefabInstance: {fileID: 4046125980190622718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1044608038
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,8 +636,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4046125980113906563, guid: c0ad72ec902bc3b419a5589c489464bd, type: 3}
+      propertyPath: ghostTargetLoc
+      value: 
+      objectReference: {fileID: 110824704}
+    - target: {fileID: 4046125980113906563, guid: c0ad72ec902bc3b419a5589c489464bd, type: 3}
       propertyPath: sprites.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4046125980113906563, guid: c0ad72ec902bc3b419a5589c489464bd, type: 3}
       propertyPath: sprites.Array.data[0]
@@ -632,6 +651,14 @@ PrefabInstance:
       propertyPath: sprites.Array.data[1]
       value: 
       objectReference: {fileID: 1820195807}
+    - target: {fileID: 4046125980113906563, guid: c0ad72ec902bc3b419a5589c489464bd, type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 1005821483}
+    - target: {fileID: 4046125980113906563, guid: c0ad72ec902bc3b419a5589c489464bd, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 18010996}
     - target: {fileID: 5773761092710833020, guid: c0ad72ec902bc3b419a5589c489464bd, type: 3}
       propertyPath: m_Intensity
       value: 3.67
@@ -762,7 +789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9221318495715410558, guid: c0ad72ec902bc3b419a5589c489464bd, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0ad72ec902bc3b419a5589c489464bd, type: 3}

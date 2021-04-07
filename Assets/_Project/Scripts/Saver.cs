@@ -56,7 +56,7 @@ public static class Saver
         byte[] bytes = Convert.FromBase64String(str);
         MemoryStream stream = new MemoryStream(bytes);
         if (stream.Length == 0)
-            return new int[] { 0, 5 };  // DEFAULT VALUE
+            return new int[] { 0, 0, 0, 0 };  // DEFAULT VALUE
         int[] array = (int[]) new BinaryFormatter().Deserialize(stream);
         return array;
     }

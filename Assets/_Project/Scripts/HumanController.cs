@@ -21,13 +21,14 @@ public class HumanController : MonoBehaviour
 
     SpriteRenderer spriteRenderer;
     GameObject sprite;
-    public Transform ghostTargetLoc;
+    [HideInInspector] public Transform ghostTargetLoc = null;
     
     float speed = 0.3f;
     float lookRate = 3.0f;
     float firstLookTimer = 1.0f;
     Vector3 scale;
 
+    public int lastHumanIndex = 0;
     void Awake()
     {
         GetAndSetSprite();
@@ -54,7 +55,10 @@ public class HumanController : MonoBehaviour
 
     GameObject GetRandSprite()
     {
-        GameObject chosenSprite = sprites[1/*Random.Range(0, sprites.Count)*/]; // remove to get rand human skins
+        int index;
+        do index = Random.Range(0, sprites.Count);
+        while (index == lastHumanIndex);
+        GameObject chosenSprite = sprites[index]; // remove to get rand human skins
         return chosenSprite;
     }
 
